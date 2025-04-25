@@ -11,9 +11,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 public interface IUserService {
+
+    public ResponseEntity<ResponseDto> user(Long id);
+
+    public ResponseEntity<ResponseDto> allUsers();
+
     public ResponseEntity<ResponseDto> register(UserDto userDto);
 
     public ResponseEntity<ResponseDto> updateDetails(Long id, UserDto userDto);
 
     public ResponseEntity<ResponseDto> disableAccount(Long id);
+
 }

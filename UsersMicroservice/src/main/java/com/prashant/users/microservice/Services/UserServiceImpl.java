@@ -7,20 +7,31 @@ import com.prashant.users.microservice.Entities.User;
 import com.prashant.users.microservice.Mapper.UserMapper;
 import com.prashant.users.microservice.Repositories.UserRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.Objects;
+import java.util.List;
 import java.util.Optional;
+
+import static com.prashant.users.microservice.Constants.MessageConstant.*;
 
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements IUserService {
 
     private UserRepository userRepository;
+
+    public ResponseEntity<ResponseDto> user(Long id) {
+        User user = userRepository.findById(id).orElseThrow();
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(USER_DETAILS_FETCHED_SUCCESSFULLY_FOR_ID_D,id),user));
+    }
+
+    public ResponseEntity<ResponseDto> allUsers() {
+       List<User> user = userRepository.findAll();
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(USER_DETAILS_FETCHED_SUCCESSFULLY),user));
+    }
 
     @Override
     public ResponseEntity<ResponseDto> register(UserDto userDto) {
@@ -38,14 +49,14 @@ public class UserServiceImpl implements IUserService {
         Optional.ofNullable(userDto.getPhone()).ifPresent(user::setPhone);
 
         userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format("User Details updated Successfully for ID : %d",id),null));
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(USER_DETAILS_UPDATED_SUCCESSFULLY_FOR_ID_D,id),user));
     }
 
     @Override
     public ResponseEntity<ResponseDto> disableAccount(Long id) {
-        User user = userRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));;
+        User user = userRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, USER_NOT_FOUND));;
         user.setIsActive(false);
         userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format("Account Disabled Successfully for ID : %d",id),user));
+        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(ACCOUNT_DISABLED_SUCCESSFULLY_FOR_ID_D,id),user));
     }
 }

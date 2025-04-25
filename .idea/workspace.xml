@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac05423-3bc4-47b1-8a9e-72fd0c32179b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/pk942/Desktop/P2P-Rentals/UsersMicroservice&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="com.prashant.users.microservice.Services.UserServiceImpl" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="UsersApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.prashant.users.microservice.UsersApplication" />

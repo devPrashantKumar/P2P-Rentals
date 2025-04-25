@@ -1,11 +1,10 @@
 package com.prashant.users.microservice.Controllers;
 
-import com.prashant.users.microservice.Constants.MessageConstant;
 import com.prashant.users.microservice.DTOs.UserDto;
 import com.prashant.users.microservice.DTOs.ResponseDto;
 import com.prashant.users.microservice.Services.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
 
+    @Autowired
     private IUserService userService;
 
     @Value("${spring.application.name}")
@@ -22,6 +22,16 @@ public class UserController {
     @GetMapping("/health-check")
     public String sayHello(){
         return String.format("Hello %s is UP and Running",applicationName);
+    }
+
+    @GetMapping("/user/{id}")
+    public ResponseEntity<ResponseDto> user(@PathVariable("id") Long id){
+        return this.userService.user(id);
+    }
+
+    @GetMapping("/users")
+    public ResponseEntity<ResponseDto> allUsers(){
+        return this.userService.allUsers();
     }
 
     @PostMapping("/register")
