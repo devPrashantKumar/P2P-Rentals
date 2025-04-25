@@ -4,33 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9b9d957-504e-45d7-9cb4-966a5d631cc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="3ac05423-3bc4-47b1-8a9e-72fd0c32179b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Constants/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Constants/MessageConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/DTOs/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/DTOs/PersonDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/DTOs/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Entities/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Mapper/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Mapper/PersonMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Repositories/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Services/IPersonService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/Services/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/java/com/theexperience/Users/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/UsersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/src/test/java/com/theexperience/Users/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserMicroservice/src/test/java/com/prashant/user/microservice/UsersApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Constants/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/UsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/test/java/com/prashant/user/microservice/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/test/java/com/prashant/users/microservice/UsersApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,44 +37,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "devPrashantKumar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;devPrashantKumar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/devPrashantKumar/P2P-Rentals.git",
-    "accountId": "1413a171-331c-4b0d-87e0-16af28eec06f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/devPrashantKumar/P2P-Rentals.git&quot;,
+    &quot;accountId&quot;: &quot;1413a171-331c-4b0d-87e0-16af28eec06f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
-  <component name="ProjectId" id="2wB6K0prw9SLMfHxRb5TROopikZ" />
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="explicitlyEnabledProfiles" value="native,nativeTest" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wBj06XnS1EjWZDBJo1ipsNBhkM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.UsersApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.UsersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UsersMicroservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UsersMicroservice [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UsersMicroservice [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pk942/Desktop/P2P-Rentals/UsersMicroservice&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="UsersApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prashant.user.microservice.UsersApplication" />
-      <module name="UserMicroservice" />
+      <option name="MAIN_CLASS_NAME" value="com.prashant.users.microservice.UsersApplication" />
+      <module name="UsersMicroservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.prashant.user.microservice.*" />
+          <option name="PATTERN" value="com.prashant.users.microservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,11 +98,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f9b9d957-504e-45d7-9cb4-966a5d631cc3" name="Changes" comment="" />
-      <created>1745502553959</created>
+      <changelist id="3ac05423-3bc4-47b1-8a9e-72fd0c32179b" name="Changes" comment="" />
+      <created>1745521637589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1745502553959</updated>
+      <updated>1745521637589</updated>
     </task>
     <servers />
   </component>
