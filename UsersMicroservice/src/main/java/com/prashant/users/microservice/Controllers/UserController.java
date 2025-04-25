@@ -3,6 +3,7 @@ package com.prashant.users.microservice.Controllers;
 import com.prashant.users.microservice.Constants.MessageConstant;
 import com.prashant.users.microservice.DTOs.UserDto;
 import com.prashant.users.microservice.DTOs.ResponseDto;
+import com.prashant.users.microservice.Services.IUserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
+
+    private IUserService userService;
 
     @Value("${spring.application.name}")
     private String applicationName;
@@ -23,16 +26,16 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<ResponseDto> register(@RequestBody UserDto userDto){
-        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto(MessageConstant.STATUS_201,MessageConstant.MESSAGE_SUCCESS));
+        return this.userService.register(userDto);
     }
 
-    @PutMapping("/update-details")
-    public ResponseEntity<ResponseDto> updateDetails(@RequestBody UserDto userDto){
-        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto(MessageConstant.STATUS_201,MessageConstant.MESSAGE_SUCCESS));
+    @PutMapping("/update-details/{id}")
+    public ResponseEntity<ResponseDto> updateDetails(@PathVariable("id") Long id, @RequestBody UserDto userDto){
+        return this.userService.updateDetails(id,userDto);
     }
 
     @DeleteMapping("/disable-account/{id}")
     public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") Long id){
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format("Account Disabled Successfully for ID : %d",id)));
+        return this.userService.disableAccount(id);
     }
 }

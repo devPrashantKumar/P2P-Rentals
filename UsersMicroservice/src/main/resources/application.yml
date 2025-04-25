@@ -5,14 +5,14 @@ spring:
   application:
     name: UsersMicroservice
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/user_service
-    driver-class-name: org.postgresql.Driver
-    username: root
-    password: root
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/user_service
+#    driver-class-name: org.postgresql.Driver
+#    username: root
+#    password: root
 
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true

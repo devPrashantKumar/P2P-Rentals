@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac05423-3bc4-47b1-8a9e-72fd0c32179b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Constants/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/DTOs/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/java/com/prashant/user/microservice/UsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/UsersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserMicroservice/src/test/java/com/prashant/user/microservice/UsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/test/java/com/prashant/users/microservice/UsersApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
