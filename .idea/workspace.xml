@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ac05423-3bc4-47b1-8a9e-72fd0c32179b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Constants/MessageConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/DTOs/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/UsersMicroservice/src/main/java/com/prashant/users/microservice/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

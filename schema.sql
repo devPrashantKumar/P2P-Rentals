@@ -1,14 +1,14 @@
-CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    phone VARCHAR(20),
-    address TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    created_by VARCHAR(100) NOT NULL,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_by VARCHAR(100),
-    is_active BOOLEAN DEFAULT TRUE
+create table app_user (
+    id uuid not null,
+    email varchar(100) not null,
+    name varchar(50) not null,
+    phone varchar(10) not null,
+    is_active boolean,
+    created_at timestamp(6),
+    created_by varchar(255),
+    updated_at timestamp(6),
+    updated_by varchar(255),
+    primary key (id)
 );
 
 CREATE TABLE bikes (
