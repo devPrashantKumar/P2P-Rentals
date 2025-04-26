@@ -14,3 +14,4 @@ create table app_user (
 drop table app_user;
 
 select * from app_user;
+create database bike_service;
