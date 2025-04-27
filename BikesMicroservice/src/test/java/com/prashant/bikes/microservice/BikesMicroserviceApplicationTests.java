@@ -1,4 +1,4 @@
-package com.prashant.bikes.microservice.BikesMicroservice;
+package com.prashant.bikes.microservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

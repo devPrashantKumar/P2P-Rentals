@@ -11,23 +11,21 @@ create table app_user (
     primary key (id)
 );
 
-CREATE TABLE bikes (
-    id SERIAL PRIMARY KEY,
-    owner_id INT REFERENCES users(id) ON DELETE CASCADE,
-    model VARCHAR(100) NOT NULL,
-    brand VARCHAR(50) NOT NULL,
-    bike_type VARCHAR(30) CHECK (bike_type IN ('ROAD', 'MOUNTAIN', 'HYBRID', 'ELECTRIC')),
-    description TEXT,
-    daily_rate DECIMAL(10, 2) NOT NULL,
-    hourly_rate DECIMAL(10, 2),
-    location_lat DECIMAL(10, 6),
-    location_lng DECIMAL(10, 6),
-    is_available BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    created_by VARCHAR(100) NOT NULL,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_by VARCHAR(100),
-    is_active BOOLEAN DEFAULT TRUE
+create table app_bike (
+    id uuid not null,
+    owner_id bigint not null,
+    bike_type varchar(255) not null check (bike_type in ('ROAD','MOUNTAIN','HYBRID','ELECTRIC')),
+    brand varchar(10) not null,
+    hourly_rate float4,
+    is_available boolean not null,
+    model varchar(100) not null,
+    name varchar(50) not null,
+    created_at timestamp(6),
+    created_by varchar(255),
+    updated_at timestamp(6),
+    updated_by varchar(255),
+    is_active boolean,
+    primary key (id)
 );
 
 CREATE TABLE bookings (

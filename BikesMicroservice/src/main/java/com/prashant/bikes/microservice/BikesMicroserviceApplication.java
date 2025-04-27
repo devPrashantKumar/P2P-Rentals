@@ -1,4 +1,4 @@
-package com.prashant.bikes.microservice.BikesMicroservice;
+package com.prashant.bikes.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
