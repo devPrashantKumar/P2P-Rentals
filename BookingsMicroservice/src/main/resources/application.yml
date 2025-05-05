@@ -1,12 +1,12 @@
 server:
-  port: 8085
+  port: 8082
 
 spring:
   application:
-    name: UsersMicroservice
+    name: BookingsMicroservice
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_service
+    url: jdbc:postgresql://localhost:5432/booking_service
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root

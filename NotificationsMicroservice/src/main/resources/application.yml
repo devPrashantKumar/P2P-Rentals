@@ -1,12 +1,12 @@
 server:
-  port: 8085
+  port: 8083
 
 spring:
   application:
-    name: UsersMicroservice
+    name: NotificationsMicroservice
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_service
+    url: jdbc:postgresql://localhost:5432/notification_service
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root

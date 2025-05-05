@@ -1,12 +1,12 @@
 server:
-  port: 8085
+  port: 8084
 
 spring:
   application:
-    name: UsersMicroservice
+    name: PaymentsMicroservice
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_service
+    url: jdbc:postgresql://localhost:5432/payment_service
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root

@@ -1,3 +1,9 @@
+create database user_service;
+create database bike_service;
+create database payment_service;
+create database booking_service;
+create database notification_service;
+
 create table app_user (
     id uuid not null,
     email varchar(100) not null,
@@ -27,6 +33,18 @@ create table app_bike (
     is_active boolean,
     primary key (id)
 );
+
+create table app_notification (
+    id uuid not null,
+    user_id varchar(255) not null,
+    message varchar(255) not null,
+    created_at timestamp(6),
+    created_by varchar(255),
+    updated_at timestamp(6),
+    updated_by varchar(255),
+    primary key (id)
+);
+
 
 CREATE TABLE bookings (
     id SERIAL PRIMARY KEY,
