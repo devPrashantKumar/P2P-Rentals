@@ -3,6 +3,8 @@ package com.prashant.notifications.microservice.Controllers;
 import com.prashant.notifications.microservice.DTOs.NotificationDto;
 import com.prashant.notifications.microservice.DTOs.ResponseDto;
 import com.prashant.notifications.microservice.Services.INotificationService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
@@ -14,6 +16,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class NotificationController {
+    public static final Logger LOGGER = LoggerFactory.getLogger(NotificationController.class);
 
     @Autowired
     private INotificationService notificationService;
@@ -23,6 +26,7 @@ public class NotificationController {
 
     @GetMapping("/health-check")
     public String sayHello(){
+        LOGGER.info("HealthCheck API called");
         return String.format("Hello %s is UP and Running",applicationName);
     }
 

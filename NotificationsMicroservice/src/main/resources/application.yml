@@ -16,3 +16,14 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+logging:
+  file:
+    path: logs
+    name: ${logging.file.path}/${spring.application.name}.log
+  level:
+    root: INFO
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${logging.file.path}/${spring.application.name}-%d{yyyy-MM-dd}-%i.log
+      max-file-size: 100KB

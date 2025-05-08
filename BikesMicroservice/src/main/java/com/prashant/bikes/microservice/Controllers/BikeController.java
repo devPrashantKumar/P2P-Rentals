@@ -3,6 +3,8 @@ package com.prashant.bikes.microservice.Controllers;
 import com.prashant.bikes.microservice.DTOs.BikeDto;
 import com.prashant.bikes.microservice.DTOs.ResponseDto;
 import com.prashant.bikes.microservice.Services.IBikeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class BikeController {
+    public static final Logger LOGGER = LoggerFactory.getLogger(BikeController.class);
 
     @Autowired
     private IBikeService bikeService;
@@ -21,6 +24,7 @@ public class BikeController {
 
     @GetMapping("/health-check")
     public String sayHello(){
+        LOGGER.info("HealthCheck API called");
         return String.format("Hello %s is UP and Running",applicationName);
     }
 
