@@ -10,16 +10,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.UUID;
+
 public interface IUserService {
 
-    public ResponseEntity<ResponseDto> user(Long id);
+    public ResponseEntity<ResponseDto> user(UUID id);
 
     public ResponseEntity<ResponseDto> allUsers();
 
     public ResponseEntity<ResponseDto> register(UserDto userDto);
 
-    public ResponseEntity<ResponseDto> updateDetails(Long id, UserDto userDto);
+    public ResponseEntity<ResponseDto> updateDetails(UUID id, UserDto userDto);
 
-    public ResponseEntity<ResponseDto> disableAccount(Long id);
+    public ResponseEntity<ResponseDto> disableAccount(UUID id);
 
 }

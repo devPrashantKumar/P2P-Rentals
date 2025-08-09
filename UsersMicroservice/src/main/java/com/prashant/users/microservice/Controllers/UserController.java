@@ -9,6 +9,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {
@@ -25,7 +27,7 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public ResponseEntity<ResponseDto> user(@PathVariable("id") Long id){
+    public ResponseEntity<ResponseDto> user(@PathVariable("id") UUID id){
         return this.userService.user(id);
     }
 
@@ -40,12 +42,12 @@ public class UserController {
     }
 
     @PutMapping("/update-details/{id}")
-    public ResponseEntity<ResponseDto> updateDetails(@PathVariable("id") Long id, @RequestBody UserDto userDto){
+    public ResponseEntity<ResponseDto> updateDetails(@PathVariable("id") UUID id, @RequestBody UserDto userDto){
         return this.userService.updateDetails(id,userDto);
     }
 
     @DeleteMapping("/disable-account/{id}")
-    public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") Long id){
+    public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") UUID id){
         return this.userService.disableAccount(id);
     }
 }
