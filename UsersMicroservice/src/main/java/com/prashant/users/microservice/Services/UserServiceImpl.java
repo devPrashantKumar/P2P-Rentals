@@ -26,7 +26,7 @@ public class UserServiceImpl implements IUserService {
 
     public ResponseEntity<ResponseDto> user(UUID id) {
         User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found for id: " + id));
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(USER_DETAILS_FETCHED_SUCCESSFULLY_FOR_ID_S,id),user));
+        return ResponseEntity.status(HttpStatus.OK).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_200).responseMessage(String.format(USER_DETAILS_FETCHED_SUCCESSFULLY_FOR_ID_S,id)).responseData(user).build());
     }
 
     public ResponseEntity<ResponseDto> allUsers() {
@@ -38,7 +38,7 @@ public class UserServiceImpl implements IUserService {
     public ResponseEntity<ResponseDto> register(UserDto userDto) {
         User user = UserMapper.mapUserDtoToUser(userDto,new User());
         userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(new ResponseDto(MessageConstant.STATUS_201,MessageConstant.MESSAGE_SUCCESS,user));
+        return ResponseEntity.status(HttpStatus.CREATED).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_201).responseMessage(MessageConstant.MESSAGE_SUCCESS).responseData(user).build());
     }
 
     @Override
@@ -50,7 +50,8 @@ public class UserServiceImpl implements IUserService {
         Optional.ofNullable(userDto.getPhone()).ifPresent(user::setPhone);
 
         userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(USER_DETAILS_UPDATED_SUCCESSFULLY_FOR_ID_S,id),user));
+        return ResponseEntity.status(HttpStatus.OK).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_200).responseMessage(String.format(USER_DETAILS_UPDATED_SUCCESSFULLY_FOR_ID_S,id)).responseData(user).build());
+
     }
 
     @Override
@@ -58,6 +59,6 @@ public class UserServiceImpl implements IUserService {
         User user = userRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, USER_NOT_FOUND));;
         user.setIsActive(false);
         userRepository.save(user);
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDto(MessageConstant.STATUS_200,String.format(ACCOUNT_DISABLED_SUCCESSFULLY_FOR_ID_S,id),user));
+        return ResponseEntity.status(HttpStatus.OK).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_200).responseMessage(String.format(ACCOUNT_DISABLED_SUCCESSFULLY_FOR_ID_S,id)).responseData(user).build());
     }
 }
