@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
+@CrossOrigin(origins = "*") // allow all origins (change "*" to restrict)
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserController {

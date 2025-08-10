@@ -1,0 +1,1 @@
+export const all_users_url = 'http://localhost:8085/api/users'
