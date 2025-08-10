@@ -24,4 +24,7 @@ public interface IUserService {
 
     public ResponseEntity<ResponseDto> disableAccount(UUID id);
 
+    public ResponseEntity<ResponseDto> reactivateAccount(UUID id);
+
+
 }

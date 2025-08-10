@@ -51,4 +51,9 @@ public class UserController {
     public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") UUID id){
         return this.userService.disableAccount(id);
     }
+
+    @PatchMapping("/reactivate-account/{id}")
+    public ResponseEntity<ResponseDto> reactivateAccount(@PathVariable("id") UUID id){
+        return this.userService.reactivateAccount(id);
+    }
 }

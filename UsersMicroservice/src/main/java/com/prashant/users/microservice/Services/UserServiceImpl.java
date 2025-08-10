@@ -59,4 +59,12 @@ public class UserServiceImpl implements IUserService {
         userRepository.save(user);
         return ResponseEntity.status(HttpStatus.OK).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_200).responseMessage(String.format(ACCOUNT_DISABLED_SUCCESSFULLY_FOR_ID_S,id)).responseData(user).build());
     }
+
+    @Override
+    public ResponseEntity<ResponseDto> reactivateAccount(UUID id) {
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(String.format(USER_NOT_FOUND_FOR_ID_S,id)));;
+        user.setIsActive(true);
+        userRepository.save(user);
+        return ResponseEntity.status(HttpStatus.OK).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_200).responseMessage(String.format(ACCOUNT_REACTIVATED_SUCCESSFULLY_FOR_ID_S,id)).responseData(user).build());
+    }
 }

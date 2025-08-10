@@ -10,6 +10,7 @@ public class MessageConstant {
     public static final String MESSAGE_500 = "An Error Occurred, Please try again or contact Dev Team";
     public static final String MESSAGE_SUCCESS = "Request Processed Successfully";
     public static final String ACCOUNT_DISABLED_SUCCESSFULLY_FOR_ID_S = "Account Disabled Successfully for ID : %s";
+    public static final String ACCOUNT_REACTIVATED_SUCCESSFULLY_FOR_ID_S = "Account Reactivated Successfully for ID : %s";
     public static final String USER_NOT_FOUND = "User not found";
     public static final String USER_NOT_FOUND_FOR_ID_S = "User not found for ID : %s";
     public static final String USER_DETAILS_UPDATED_SUCCESSFULLY_FOR_ID_S = "User Details updated Successfully for ID : %s";
