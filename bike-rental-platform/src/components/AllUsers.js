@@ -3,6 +3,7 @@ import {
   all_users_url,
   disable_account_url,
   reactivate_account_url,
+  update_user_url
 } from "../api-urls";
 import axios from "axios";
 import {
@@ -86,7 +87,7 @@ function Allusers() {
 
   const handleEditSave = () => {
     axios
-      .put(`${all_users_url}/${editUser.id}`, editUser)
+      .put(`${update_user_url}/${editUser.id}`, editUser)
       .then(() => {
         alert("User updated successfully");
         setEditModal(false);
