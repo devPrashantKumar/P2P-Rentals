@@ -1,3 +1,5 @@
 export const all_users_url = 'http://localhost:8085/api/users'
+export const get_user_url = 'http://localhost:8085/api/user'
+export const register_user_url = 'http://localhost:8085/api/register'
 export const disable_account_url = 'http://localhost:8085/api/disable-account'
 export const reactivate_account_url = 'http://localhost:8085/api/reactivate-account'
