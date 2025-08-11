@@ -4,17 +4,19 @@ import com.prashant.bikes.microservice.DTOs.ResponseDto;
 import com.prashant.bikes.microservice.DTOs.BikeDto;
 import org.springframework.http.ResponseEntity;
 
+import java.util.UUID;
+
 public interface IBikeService {
 
-    public ResponseEntity<ResponseDto> bike(Long id);
+    public ResponseEntity<ResponseDto> bike(UUID id);
 
     public ResponseEntity<ResponseDto> allBikes();
 
-    public ResponseEntity<ResponseDto> userOwnedBikes(Long id);
+    public ResponseEntity<ResponseDto> userOwnedBikes(UUID id);
 
     public ResponseEntity<ResponseDto> register(BikeDto bikeDto);
 
-    public ResponseEntity<ResponseDto> updateDetails(Long id, BikeDto bikeDto);
+    public ResponseEntity<ResponseDto> updateDetails(UUID id, BikeDto bikeDto);
 
-    public ResponseEntity<ResponseDto> disableAccount(Long id);
+    public ResponseEntity<ResponseDto> disableAccount(UUID id);
 }

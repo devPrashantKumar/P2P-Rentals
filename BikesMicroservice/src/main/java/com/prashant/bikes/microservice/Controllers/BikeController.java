@@ -11,6 +11,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 public class BikeController {
@@ -29,7 +32,7 @@ public class BikeController {
     }
 
     @GetMapping("/bike/{id}")
-    public ResponseEntity<ResponseDto> bike(@PathVariable("id") Long id){
+    public ResponseEntity<ResponseDto> bike(@PathVariable("id") UUID id){
         return this.bikeService.bike(id);
     }
 
@@ -39,7 +42,7 @@ public class BikeController {
     }
 
     @GetMapping("/user-owned-bikes/{id}")
-    public ResponseEntity<ResponseDto> userOwnedBikes(@PathVariable("id") Long id){
+    public ResponseEntity<ResponseDto> userOwnedBikes(@PathVariable("id") UUID id){
         return this.bikeService.userOwnedBikes(id);
     }
 
@@ -49,12 +52,12 @@ public class BikeController {
     }
 
     @PutMapping("/update-details/{id}")
-    public ResponseEntity<ResponseDto> updateDetails(@PathVariable("id") Long id, @RequestBody BikeDto bikeDto){
+    public ResponseEntity<ResponseDto> updateDetails(@PathVariable("id") UUID id, @RequestBody BikeDto bikeDto){
         return this.bikeService.updateDetails(id,bikeDto);
     }
 
     @DeleteMapping("/disable-account/{id}")
-    public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") Long id){
+    public ResponseEntity<ResponseDto> disableAccount(@PathVariable("id") UUID id){
         return this.bikeService.disableAccount(id);
     }
 }

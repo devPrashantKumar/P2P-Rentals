@@ -19,7 +19,7 @@ create table app_user (
 
 create table app_bike (
     id uuid not null,
-    owner_id bigint not null,
+    owner_id uuid not null,
     bike_type varchar(255) not null check (bike_type in ('ROAD','MOUNTAIN','HYBRID','ELECTRIC')),
     brand varchar(10) not null,
     hourly_rate float4,

@@ -20,7 +20,7 @@ public class Bike {
     private UUID id;
 
     @Column(name="owner_id", nullable = false)
-    private Long ownerId;
+    private UUID ownerId;
 
     @Column(nullable = false, length = 50)
     private String name;

@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class BikeDto {
     private String name;
-    private Long ownerId;
+    private UUID ownerId;
     private String model;
     private String brand;
     private BikeType bikeType;
