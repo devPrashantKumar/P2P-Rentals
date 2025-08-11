@@ -7,6 +7,7 @@ import Menus from './components/Menus';
 import Allusers from './components/AllUsers';
 import Profile from './components/Profile';
 import RegisterUser from './components/RegisterUser';
+import MicroserviceHealth from './components/MicroserviceHealth';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Col md={8}>
               <Routes>
                 <Route path="/" Component={Home} exact />
+                <Route path="/microservices-health" Component={MicroserviceHealth} exact />
                 <Route path="/register" Component={RegisterUser} exact />
                 <Route path="/all-users" Component={Allusers} exact />
                 <Route path="/profile" Component={Profile} exact />
