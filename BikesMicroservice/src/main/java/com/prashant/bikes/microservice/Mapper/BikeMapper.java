@@ -9,8 +9,6 @@ public class BikeMapper {
         bike.setBrand(bikeDto.getBrand());
         bike.setName(bikeDto.getName());
         bike.setModel(bikeDto.getModel());
-        bike.setHourlyRate(bikeDto.getHourlyRate());
-        bike.setIsAvailable(bikeDto.getIsAvailable());
         bike.setOwnerId(bikeDto.getOwnerId());
         return bike;
     }
@@ -20,8 +18,6 @@ public class BikeMapper {
         bikeDto.setBrand(bike.getBrand());
         bikeDto.setName(bike.getName());
         bikeDto.setModel(bike.getModel());
-        bikeDto.setHourlyRate(bike.getHourlyRate());
-        bikeDto.setIsAvailable(bike.getIsAvailable());
         bikeDto.setOwnerId(bike.getOwnerId());
         return bikeDto;
     }

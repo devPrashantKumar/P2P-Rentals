@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -13,33 +14,20 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table(name = "app_bike")
-public class Bike {
+@Table(name = "app_bike_availability")
+public class BikeAvailability {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name="owner_id", nullable = false)
-    private UUID ownerId;
+    @Column(name="bike_id", nullable = false)
+    private UUID bikeId;
 
-    @Column(nullable = false, length = 50)
-    private String name;
+    @Column(name="available_from", updatable = false)
+    private LocalDateTime availableFrom;
 
-    @Column(nullable = false, length = 100)
-    private String model;
-
-    @Column(nullable = false, length = 10)
-    private String brand;
-
-    @Enumerated(value=EnumType.STRING)
-    @Column(name="bike_type",nullable = false)
-    private BikeType bikeType;
-
-//    @Column(name="hourly_rate",precision = 2,length = 6)
-//    private Double hourlyRate;
-
-//    @Column(name="is_available", nullable=false)
-//    private Boolean isAvailable;
+    @Column(name="available_to", updatable = false)
+    private LocalDateTime availableTo;
 
     @Column(name = "is_active")
     private Boolean isActive = true;
@@ -62,6 +50,7 @@ public class Bike {
         this.updatedAt = LocalDateTime.now();
         this.createdBy = this.createdBy == null ? "system" : this.createdBy;
         this.updatedBy = this.updatedBy == null ? "system" : this.updatedBy;
+        this.availableFrom = this.getAvailableFrom()==null ? LocalDateTime.now() : this.availableFrom;
     }
 
     @PreUpdate

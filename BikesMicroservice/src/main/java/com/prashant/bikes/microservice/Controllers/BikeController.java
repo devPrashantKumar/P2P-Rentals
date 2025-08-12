@@ -1,5 +1,6 @@
 package com.prashant.bikes.microservice.Controllers;
 
+import com.prashant.bikes.microservice.DTOs.BikeAvailabilityDto;
 import com.prashant.bikes.microservice.DTOs.BikeDto;
 import com.prashant.bikes.microservice.DTOs.ResponseDto;
 import com.prashant.bikes.microservice.Services.IBikeService;
@@ -49,6 +50,11 @@ public class BikeController {
     @PostMapping("/register")
     public ResponseEntity<ResponseDto> register(@RequestBody BikeDto bikeDto){
         return this.bikeService.register(bikeDto);
+    }
+
+    @PostMapping("/bike-availability")
+    public ResponseEntity<ResponseDto> addBikeAvailability(@RequestBody BikeAvailabilityDto bikeAvailabilityDto){
+        return this.bikeService.addBikeAvailability(bikeAvailabilityDto);
     }
 
     @PutMapping("/update-details/{id}")

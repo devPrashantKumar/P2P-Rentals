@@ -1,17 +1,20 @@
 package com.prashant.bikes.microservice.Services;
 
 import com.prashant.bikes.microservice.Constants.MessageConstant;
+import com.prashant.bikes.microservice.DTOs.BikeAvailabilityDto;
 import com.prashant.bikes.microservice.DTOs.ResponseDto;
 import com.prashant.bikes.microservice.DTOs.BikeDto;
 import com.prashant.bikes.microservice.Entities.Bike;
+import com.prashant.bikes.microservice.Entities.BikeAvailability;
 import com.prashant.bikes.microservice.Exceptions.BikeNotFoundException;
+import com.prashant.bikes.microservice.Mapper.BikeAvailabilityMapper;
 import com.prashant.bikes.microservice.Mapper.BikeMapper;
+import com.prashant.bikes.microservice.Repositories.BikeAvailabilityRepository;
 import com.prashant.bikes.microservice.Repositories.BikeRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +27,7 @@ import static com.prashant.bikes.microservice.Constants.MessageConstant.*;
 public class BikeServiceImpl implements IBikeService {
 
     private BikeRepository bikeRepository;
+    private BikeAvailabilityRepository bikeAvailabilityRepository;
 
     public ResponseEntity<ResponseDto> bike(UUID id) {
         Bike bike = bikeRepository.findById(id).orElseThrow(() -> new BikeNotFoundException(String.format(BIKE_NOT_FOUND_FOR_ID_S,id)));
@@ -46,6 +50,14 @@ public class BikeServiceImpl implements IBikeService {
         Bike bike = BikeMapper.mapUserDtoToUser(bikeDto,new Bike());
         bikeRepository.save(bike);
         return ResponseEntity.status(HttpStatus.CREATED).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_201).responseMessage(MessageConstant.MESSAGE_SUCCESS).responseData(bike).build());
+    }
+
+    @Override
+    public ResponseEntity<ResponseDto> addBikeAvailability(BikeAvailabilityDto bikeAvailabilityDto) {
+        Bike bike = bikeRepository.findById(bikeAvailabilityDto.getBikeId()).orElseThrow(() -> new BikeNotFoundException(String.format(BIKE_NOT_FOUND_FOR_ID_S,bikeAvailabilityDto.getBikeId())));
+        BikeAvailability bikeAvailability = BikeAvailabilityMapper.mapBikeAvailabilityDtoToBikeAvailability(bikeAvailabilityDto);
+        bikeAvailabilityRepository.save(bikeAvailability);
+        return ResponseEntity.status(HttpStatus.CREATED).body(ResponseDto.builder().statusCode(MessageConstant.STATUS_201).responseMessage(MessageConstant.MESSAGE_SUCCESS).responseData(bikeAvailability).build());
     }
 
     @Override
